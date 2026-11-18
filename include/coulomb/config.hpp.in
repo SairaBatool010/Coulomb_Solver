@@ -1,0 +1,14 @@
+// Build configuration of the Coulomb solver.
+//
+// CMake generates config.hpp from this file (config.hpp.in). Do not edit the
+// generated copy in the build folder: change the CMake options instead.
+
+#pragma once
+
+namespace coulomb::config {
+
+using Precision = @COULOMB_PRECISION@;                          // COULOMB_PRECISION
+inline constexpr bool kWithPotential = @COULOMB_WITH_POTENTIAL_CXX@;  // COULOMB_WITH_POTENTIAL
+inline constexpr bool kWithEnergy = @COULOMB_WITH_ENERGY_CXX@;        // COULOMB_WITH_ENERGY
+
+}  // namespace coulomb::config

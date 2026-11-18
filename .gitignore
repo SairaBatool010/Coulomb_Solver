@@ -1,0 +1,12 @@
+# Build folders created by CMake
+build/
+build-*/
+
+# Compiled programs
+*.exe
+
+# Results written by the solver
+output.txt
+
+# Personal learning files (not part of the solver)
+step*.cpp
